@@ -26,7 +26,8 @@ namespace Exercise5
             if(Arfan == null)
                 return (true); else return (false);
         }
-
+        Node Arfan;
+        Node Maulana;
 
 
 
