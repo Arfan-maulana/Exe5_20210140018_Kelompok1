@@ -17,13 +17,13 @@ namespace Exercise5
 
             public Node(int mm)
             {
-               MM= mm;
+                MM = mm;
             }
         }
 
         bool empty()
         {
-            if(Arfan == null)
+            if (Arfan == null)
                 return (true); else return (false);
         }
         Node Arfan;
@@ -31,8 +31,8 @@ namespace Exercise5
 
         public void insert(string mm)
         {
-            var newNode == newNode(mm);
-            if(Maulana != null)
+            var newNode = new Node(mm);
+            if (Maulana != null)
             {
                 Maulana.next = newNode;
             }
@@ -45,13 +45,13 @@ namespace Exercise5
 
         public void delete()
         {
-            if(Arfan == null)
+            if (Arfan == null)
             {
                 throw new InvalidProgramException("The queue is empty");
             }
             var mm = Arfan.MM;
             Arfan = Arfan.next;
-            if(Arfan == null)
+            if (Arfan == null)
             {
                 Arfan = null;
             }
@@ -72,13 +72,25 @@ namespace Exercise5
             }
         }
 
-
-
-
-
-        static void Main(string[] args)
+        class Program
         {
-
+            static void Main(string[] args)
+            {
+                Queue_Linked_List q = new Queue_Linked_List();
+                char ch;
+                while(true)
+                {
+                    Console.WriteLine("\nStack Menu");
+                    Console.WriteLine("1. Insert");
+                    Console.WriteLine("2. Deleted");
+                    Console.WriteLine("3. Display");
+                    Console.WriteLine("Exit");
+                    Console.WriteLine("\nEnter Your Choice");
+                    ch = Convert.ToChar(Console.ReadLine());
+                    Console.WriteLine();
+                    
+                }
+            }
         }
     }
 }
