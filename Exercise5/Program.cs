@@ -11,11 +11,11 @@ namespace Exercise5
 
         class Node
         {
-            public int MM;
+            public string MM;
             public Node next;
 
 
-            public Node(int mm)
+            public Node(string mm)
             {
                 MM = mm;
             }
@@ -77,8 +77,7 @@ namespace Exercise5
             static void Main(string[] args)
             {
                 Queue_Linked_List q = new Queue_Linked_List();
-                char ch;
-                while(true)
+                while (true)
                 {
                     Console.WriteLine("\nStack Menu");
                     Console.WriteLine("1. Insert");
@@ -86,9 +85,13 @@ namespace Exercise5
                     Console.WriteLine("3. Display");
                     Console.WriteLine("Exit");
                     Console.WriteLine("\nEnter Your Choice");
-                    ch = Convert.ToChar(Console.ReadLine());
-                    Console.WriteLine();
-                    
+                    string input =(Console.ReadLine());
+                    char ch = Convert.ToChar(input == "" ? "0" : input);
+                    switch (ch)
+                    {
+                      
+                    }
+                }
                 }
             }
         }
