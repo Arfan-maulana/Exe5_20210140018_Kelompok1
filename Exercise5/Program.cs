@@ -58,7 +58,19 @@ namespace Exercise5
         }
 
 
-
+        public void Display()
+        {
+            Node tmp;
+            if (empty())
+                Console.WriteLine("\nStack Empty");
+            else
+            {
+                for (tmp = Arfan; tmp != null; tmp = tmp.next)
+                {
+                    Console.WriteLine(tmp.MM);
+                }
+            }
+        }
 
 
 
