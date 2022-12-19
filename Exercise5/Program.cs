@@ -29,6 +29,10 @@ namespace Exercise5
         Node Arfan;
         Node Maulana;
 
+        public void insert(string mm)
+        {
+            
+        }
 
 
 
