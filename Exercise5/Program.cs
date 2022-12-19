@@ -37,17 +37,24 @@ namespace Exercise5
                 Maulana.next = newNode;
             }
             Maulana = newNode;
-            if (Maulana == null)
+            if (Arfan == null)
             {
-                Maulana = newNode;
+                Arfan = newNode;
             }
         }
 
         public void delete()
         {
-
-
-
+            if(Arfan == null)
+            {
+                throw new InvalidProgramException("The queue is empty");
+            }
+            var mm = Arfan.MM;
+            Arfan = Arfan.next;
+            if(Arfan == null)
+            {
+                Arfan = null;
+            }
         }
 
 
