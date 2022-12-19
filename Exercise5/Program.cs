@@ -31,7 +31,16 @@ namespace Exercise5
 
         public void insert(string mm)
         {
-            
+            var newNode == newNode(mm);
+            if(Maulana != null)
+            {
+                Maulana.next = newNode;
+            }
+            Maulana = newNode;
+            if (Maulana == null)
+            {
+                Maulana = newNode;
+            }
         }
 
 
