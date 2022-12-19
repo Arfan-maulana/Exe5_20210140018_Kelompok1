@@ -89,10 +89,26 @@ namespace Exercise5
                     char ch = Convert.ToChar(input == "" ? "0" : input);
                     switch (ch)
                     {
-                      
+                        case '1':
+                            Console.WriteLine("\nEnter your alfabeth: ");
+                            string num = Convert.ToString(Console.ReadLine());
+                            q.insert(num);
+                            break;
+                        case '2':
+                            q.delete();
+                            Console.WriteLine("item deleted");
+                            break;
+                        case '3':
+                            q.Display();
+                            break;
+                        case '4':
+                            return;
+                        default:
+                            Console.WriteLine("\nInvalid Choice");
+                            break ;
                     }
                 }
-                }
+                
             }
         }
     }
