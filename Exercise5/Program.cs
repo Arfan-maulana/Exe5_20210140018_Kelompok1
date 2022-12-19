@@ -43,7 +43,12 @@ namespace Exercise5
             }
         }
 
+        public void delete()
+        {
 
+
+
+        }
 
 
 
