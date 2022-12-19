@@ -21,7 +21,11 @@ namespace Exercise5
             }
         }
 
-
+        bool empty()
+        {
+            if(Arfan == null)
+                return (true); else return (false);
+        }
 
 
 
